@@ -3,3 +3,9 @@
 <h3>Ah et, on est al':</h3>
 <p>StaticPages#index</p>
 <p>Find me in app/views/static_pages/index.html.erb</p>
+<% @a.each do |gossip| %>
+<%= gossip.user.first_name %>
+<br>
+<%= gossip.title %>
+<p></p>
+<% end %>
